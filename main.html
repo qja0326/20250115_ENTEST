@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>20250115_ENTEST</title>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="./images/logo.svg" alt="EXMEDIA로고">
+            </a>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <button type="button" class="btn-close">X</button>
+            </nav>
+            <button type="button" class="btn-mo-menu"><img src="./images/icon_mo_menu.svg" alt=""></button>
+        </div>
+    </header>
+    <section class="intro-wrap">
+        <div class="swiper intro-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="container">
+                        <strong>Lorem ipsum dolor sit amet,</strong>
+                        <p>Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <strong>Lorem ipsum dolor sit amet,</strong>
+                        <p>Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <strong>Lorem ipsum dolor sit amet,</strong>
+                        <p>Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <strong>Lorem ipsum dolor sit amet,</strong>
+                        <p>Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="card-wrap">
+            <div class="item-box" data-aos="flip-left" data-aos-delay="200" data-aos-duration="800">
+                <div class="img-wrap">
+                    <img src="./images/img1.jpg" alt="card1">
+                </div>
+                <div class="text-box">
+                    <strong>Lorem ipsum dolor sit amet,</strong>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                    <span>Lorem ipsum dolor sit amet,</span>
+                </div>
+            </div>
+            <div class="item-box" data-aos="flip-left" data-aos-delay="400" data-aos-duration="800">
+                <div class="img-wrap">
+                    <img src="./images/img2.jpg" alt="card2">
+                </div>
+                <div class="text-box">
+                    <strong>Lorem ipsum dolor sit amet,</strong>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                    <span>Lorem ipsum dolor sit amet,</span>
+                </div>
+            </div>
+            <div class="item-box" data-aos="flip-left" data-aos-delay="600" data-aos-duration="800">
+                <div class="img-wrap">
+                    <img src="./images/img3.jpg" alt="card3">
+                </div>
+                <div class="text-box">
+                    <strong>Lorem ipsum dolor sit amet,</strong>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                    <span>Lorem ipsum dolor sit amet,</span>
+                </div>
+            </div>
+            <div class="item-box" data-aos="flip-left" data-aos-delay="800" data-aos-duration="800">
+                <div class="img-wrap">
+                    <img src="./images/img4.jpg" alt="card4">
+                </div>
+                <div class="text-box">
+                    <strong>Lorem ipsum dolor sit amet,</strong>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                    <span>Lorem ipsum dolor sit amet,</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="custom-wrap">
+        <div class="item-box">
+            <h2>Fast Delivery</h2>
+            <p>Experience lightning-fast delivery for all your needs, no matter where you are.</p>
+            <button type="button">Learn More</button>
+        </div>
+        <div class="item-box">
+            <h2>Creative Solutions</h2>
+            <p>Discover innovative approaches tailored to your specific challenges and goals.</p>
+            <button type="button">Explore Ideas</button>
+        </div>
+        <div class="item-box">
+            <h2>Premium Quality</h2>
+            <p>We prioritize excellence, ensuring you receive nothing but the best quality.</p>
+            <button type="button">See More</button>
+        </div>
+    </section>
+    <section class="bottom-wrap"></section>
+    <footer>
+        <div class="container">
+            <p>회사명 : 주식회사 이엔미디어 대표 : 이희주 사업자번호 : 183-87-00290</p>
+            <p>주소 : 서울특별시 강서구 강서로56가길 141 케이엠빌딩, 6층</p>
+            <p>이메일 : contact@en-media.kr</p>
+            <p>대표번호 : 02-3429-3161 팩스 : 0505-369-1729</p>
+            <span>&copy; 2025 My Website. All rights reserved.</span>
+        </div>
+    </footer>
+</body>
+<script>
+    AOS.init();
+
+    const introSwiper = new Swiper('.intro-swiper', {
+        autoHeight: true,
+        autoplay: {
+            delay: 2000,
+        },
+        speed : 700,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+
+    $(function(){
+        $(document).on('click', '.btn-mo-menu', function (){
+            $('nav').addClass('active');
+        });
+
+        $(document).on('click', 'header nav .btn-close', function (){
+            $('nav').removeClass('active');
+        });
+    });
+
+</script>
+</html>
